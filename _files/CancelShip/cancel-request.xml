@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <DeleteShipmentRequest xmlns="http://fedex.com/ws/ship/v23">
+            <WebAuthenticationDetail>
+                <UserCredential>
+                    <Key>********</Key>
+                    <Password>********</Password>
+                </UserCredential>
+            </WebAuthenticationDetail>
+            <ClientDetail>
+                <AccountNumber>********</AccountNumber>
+                <MeterNumber>********</MeterNumber>
+            </ClientDetail>
+            <Version>
+                <ServiceId>ship</ServiceId>
+                <Major>23</Major>
+                <Intermediate>0</Intermediate>
+                <Minor>0</Minor>
+            </Version>
+            <ShipTimestamp>2020-11-18T16:08:11.698542+08:00</ShipTimestamp>
+            <TrackingId>
+                <TrackingIdType>FEDEX</TrackingIdType>
+                <TrackingNumber>399068869222</TrackingNumber>
+            </TrackingId>
+            <DeletionControl>DELETE_ALL_PACKAGES</DeletionControl>
+        </DeleteShipmentRequest>
+    </Body>
+</Envelope>

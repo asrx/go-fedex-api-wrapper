@@ -1,0 +1,10 @@
+package SimpleType
+
+
+type HazardousCommodityAttributeType string
+
+const (
+	HazardousCommodityAttributeTypeNOT_SUBJECT_TO_REGULATIONS HazardousCommodityAttributeType = "NOT_SUBJECT_TO_REGULATIONS"
+
+	HazardousCommodityAttributeTypePLACARDED_VEHICLE_REQUIRED HazardousCommodityAttributeType = "PLACARDED_VEHICLE_REQUIRED"
+)

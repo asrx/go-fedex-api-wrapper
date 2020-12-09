@@ -1,0 +1,28 @@
+package SimpleType
+
+
+type InternationalControlledExportType string
+
+const (
+	InternationalControlledExportTypeDEA_036 InternationalControlledExportType = "DEA_036"
+
+	InternationalControlledExportTypeDEA_236 InternationalControlledExportType = "DEA_236"
+
+	InternationalControlledExportTypeDEA_486 InternationalControlledExportType = "DEA_486"
+
+	InternationalControlledExportTypeDSP_05 InternationalControlledExportType = "DSP_05"
+
+	InternationalControlledExportTypeDSP_61 InternationalControlledExportType = "DSP_61"
+
+	InternationalControlledExportTypeDSP_73 InternationalControlledExportType = "DSP_73"
+
+	InternationalControlledExportTypeDSP_85 InternationalControlledExportType = "DSP_85"
+
+	InternationalControlledExportTypeDSP_94 InternationalControlledExportType = "DSP_94"
+
+	InternationalControlledExportTypeDSP_LICENSE_AGREEMENT InternationalControlledExportType = "DSP_LICENSE_AGREEMENT"
+
+	InternationalControlledExportTypeFROM_FOREIGN_TRADE_ZONE InternationalControlledExportType = "FROM_FOREIGN_TRADE_ZONE"
+
+	InternationalControlledExportTypeWAREHOUSE_WITHDRAWAL InternationalControlledExportType = "WAREHOUSE_WITHDRAWAL"
+)

@@ -1,0 +1,14 @@
+package SimpleType
+
+
+type TinType string
+
+const (
+	TinTypeBUSINESS_NATIONAL TinType = "BUSINESS_NATIONAL"
+
+	TinTypeBUSINESS_STATE TinType = "BUSINESS_STATE"
+
+	TinTypePERSONAL_NATIONAL TinType = "PERSONAL_NATIONAL"
+
+	TinTypePERSONAL_STATE TinType = "PERSONAL_STATE"
+)

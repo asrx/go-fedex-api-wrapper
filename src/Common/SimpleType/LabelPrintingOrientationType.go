@@ -1,0 +1,9 @@
+package SimpleType
+
+type LabelPrintingOrientationType string
+
+const (
+	LabelPrintingOrientationTypeBOTTOM_EDGE_OF_TEXT_FIRST LabelPrintingOrientationType = "BOTTOM_EDGE_OF_TEXT_FIRST"
+
+	LabelPrintingOrientationTypeTOP_EDGE_OF_TEXT_FIRST LabelPrintingOrientationType = "TOP_EDGE_OF_TEXT_FIRST"
+)

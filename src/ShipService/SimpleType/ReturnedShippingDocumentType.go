@@ -1,0 +1,64 @@
+package SimpleType
+
+
+type ReturnedShippingDocumentType string
+
+const (
+	ReturnedShippingDocumentTypeAUXILIARY_LABEL ReturnedShippingDocumentType = "AUXILIARY_LABEL"
+
+	ReturnedShippingDocumentTypeCERTIFICATE_OF_ORIGIN ReturnedShippingDocumentType = "CERTIFICATE_OF_ORIGIN"
+
+	ReturnedShippingDocumentTypeCOD_AND_DELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_2_D_BARCODE ReturnedShippingDocumentType = "COD_AND_DELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_2_D_BARCODE"
+
+	ReturnedShippingDocumentTypeCOD_AND_DELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_LABEL ReturnedShippingDocumentType = "COD_AND_DELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_LABEL"
+
+	ReturnedShippingDocumentTypeCOD_RETURN_2_D_BARCODE ReturnedShippingDocumentType = "COD_RETURN_2_D_BARCODE"
+
+	ReturnedShippingDocumentTypeCOD_RETURN_LABEL ReturnedShippingDocumentType = "COD_RETURN_LABEL"
+
+	ReturnedShippingDocumentTypeCOMMERCIAL_INVOICE ReturnedShippingDocumentType = "COMMERCIAL_INVOICE"
+
+	ReturnedShippingDocumentTypeCUSTOM_PACKAGE_DOCUMENT ReturnedShippingDocumentType = "CUSTOM_PACKAGE_DOCUMENT"
+
+	ReturnedShippingDocumentTypeCUSTOM_SHIPMENT_DOCUMENT ReturnedShippingDocumentType = "CUSTOM_SHIPMENT_DOCUMENT"
+
+	ReturnedShippingDocumentTypeDANGEROUS_GOODS_SHIPPERS_DECLARATION ReturnedShippingDocumentType = "DANGEROUS_GOODS_SHIPPERS_DECLARATION"
+
+	ReturnedShippingDocumentTypeDELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_2_D_BARCODE ReturnedShippingDocumentType = "DELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_2_D_BARCODE"
+
+	ReturnedShippingDocumentTypeDELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_LABEL ReturnedShippingDocumentType = "DELIVERY_ON_INVOICE_ACCEPTANCE_RETURN_LABEL"
+
+	ReturnedShippingDocumentTypeETD_LABEL ReturnedShippingDocumentType = "ETD_LABEL"
+
+	ReturnedShippingDocumentTypeEXPORT_DECLARATION ReturnedShippingDocumentType = "EXPORT_DECLARATION"
+
+	ReturnedShippingDocumentTypeFEDEX_FREIGHT_STRAIGHT_BILL_OF_LADING ReturnedShippingDocumentType = "FEDEX_FREIGHT_STRAIGHT_BILL_OF_LADING"
+
+	ReturnedShippingDocumentTypeFREIGHT_ADDRESS_LABEL ReturnedShippingDocumentType = "FREIGHT_ADDRESS_LABEL"
+
+	ReturnedShippingDocumentTypeGENERAL_AGENCY_AGREEMENT ReturnedShippingDocumentType = "GENERAL_AGENCY_AGREEMENT"
+
+	ReturnedShippingDocumentTypeGROUND_BARCODE ReturnedShippingDocumentType = "GROUND_BARCODE"
+
+	ReturnedShippingDocumentTypeNAFTA_CERTIFICATE_OF_ORIGIN ReturnedShippingDocumentType = "NAFTA_CERTIFICATE_OF_ORIGIN"
+
+	ReturnedShippingDocumentTypeOP_900 ReturnedShippingDocumentType = "OP_900"
+
+	ReturnedShippingDocumentTypeOUTBOUND_2_D_BARCODE ReturnedShippingDocumentType = "OUTBOUND_2_D_BARCODE"
+
+	ReturnedShippingDocumentTypeOUTBOUND_LABEL ReturnedShippingDocumentType = "OUTBOUND_LABEL"
+
+	ReturnedShippingDocumentTypePRO_FORMA_INVOICE ReturnedShippingDocumentType = "PRO_FORMA_INVOICE"
+
+	ReturnedShippingDocumentTypeRECIPIENT_ADDRESS_BARCODE ReturnedShippingDocumentType = "RECIPIENT_ADDRESS_BARCODE"
+
+	ReturnedShippingDocumentTypeRECIPIENT_POSTAL_BARCODE ReturnedShippingDocumentType = "RECIPIENT_POSTAL_BARCODE"
+
+	ReturnedShippingDocumentTypeRETURN_INSTRUCTIONS ReturnedShippingDocumentType = "RETURN_INSTRUCTIONS"
+
+	ReturnedShippingDocumentTypeTERMS_AND_CONDITIONS ReturnedShippingDocumentType = "TERMS_AND_CONDITIONS"
+
+	ReturnedShippingDocumentTypeUSPS_BARCODE ReturnedShippingDocumentType = "USPS_BARCODE"
+
+	ReturnedShippingDocumentTypeVICS_BILL_OF_LADING ReturnedShippingDocumentType = "VICS_BILL_OF_LADING"
+)

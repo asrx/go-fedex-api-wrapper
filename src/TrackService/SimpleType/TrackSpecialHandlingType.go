@@ -1,0 +1,223 @@
+package SimpleType
+
+type TrackSpecialHandlingType string
+
+const (
+	TrackSpecialHandlingTypeACCESSIBLE_DANGEROUS_GOODS TrackSpecialHandlingType = "ACCESSIBLE_DANGEROUS_GOODS"
+
+	TrackSpecialHandlingTypeADULT_SIGNATURE_OPTION TrackSpecialHandlingType = "ADULT_SIGNATURE_OPTION"
+
+	TrackSpecialHandlingTypeAIRBILL_AUTOMATION TrackSpecialHandlingType = "AIRBILL_AUTOMATION"
+
+	TrackSpecialHandlingTypeAIRBILL_DELIVERY TrackSpecialHandlingType = "AIRBILL_DELIVERY"
+
+	TrackSpecialHandlingTypeALCOHOL TrackSpecialHandlingType = "ALCOHOL"
+
+	TrackSpecialHandlingTypeAM_DELIVERY_GUARANTEE TrackSpecialHandlingType = "AM_DELIVERY_GUARANTEE"
+
+	TrackSpecialHandlingTypeAPPOINTMENT_DELIVERY TrackSpecialHandlingType = "APPOINTMENT_DELIVERY"
+
+	TrackSpecialHandlingTypeBATTERY TrackSpecialHandlingType = "BATTERY"
+
+	TrackSpecialHandlingTypeBILL_RECIPIENT TrackSpecialHandlingType = "BILL_RECIPIENT"
+
+	TrackSpecialHandlingTypeBROKER_SELECT_OPTION TrackSpecialHandlingType = "BROKER_SELECT_OPTION"
+
+	TrackSpecialHandlingTypeCALL_BEFORE_DELIVERY TrackSpecialHandlingType = "CALL_BEFORE_DELIVERY"
+
+	TrackSpecialHandlingTypeCALL_TAG TrackSpecialHandlingType = "CALL_TAG"
+
+	TrackSpecialHandlingTypeCALL_TAG_DAMAGE TrackSpecialHandlingType = "CALL_TAG_DAMAGE"
+
+	TrackSpecialHandlingTypeCHARGEABLE_CODE TrackSpecialHandlingType = "CHARGEABLE_CODE"
+
+	TrackSpecialHandlingTypeCOD TrackSpecialHandlingType = "COD"
+
+	TrackSpecialHandlingTypeCOLLECT TrackSpecialHandlingType = "COLLECT"
+
+	TrackSpecialHandlingTypeCONSOLIDATION TrackSpecialHandlingType = "CONSOLIDATION"
+
+	TrackSpecialHandlingTypeCONSOLIDATION_SMALLS_BAG TrackSpecialHandlingType = "CONSOLIDATION_SMALLS_BAG"
+
+	TrackSpecialHandlingTypeCURRENCY TrackSpecialHandlingType = "CURRENCY"
+
+	TrackSpecialHandlingTypeCUT_FLOWERS TrackSpecialHandlingType = "CUT_FLOWERS"
+
+	TrackSpecialHandlingTypeDATE_CERTAIN_DELIVERY TrackSpecialHandlingType = "DATE_CERTAIN_DELIVERY"
+
+	TrackSpecialHandlingTypeDELIVERY_ON_INVOICE_ACCEPTANCE TrackSpecialHandlingType = "DELIVERY_ON_INVOICE_ACCEPTANCE"
+
+	TrackSpecialHandlingTypeDELIVERY_REATTEMPT TrackSpecialHandlingType = "DELIVERY_REATTEMPT"
+
+	TrackSpecialHandlingTypeDELIVERY_RECEIPT TrackSpecialHandlingType = "DELIVERY_RECEIPT"
+
+	TrackSpecialHandlingTypeDELIVER_WEEKDAY TrackSpecialHandlingType = "DELIVER_WEEKDAY"
+
+	TrackSpecialHandlingTypeDIRECT_SIGNATURE_OPTION TrackSpecialHandlingType = "DIRECT_SIGNATURE_OPTION"
+
+	TrackSpecialHandlingTypeDOMESTIC TrackSpecialHandlingType = "DOMESTIC"
+
+	TrackSpecialHandlingTypeDO_NOT_BREAK_DOWN_PALLETS TrackSpecialHandlingType = "DO_NOT_BREAK_DOWN_PALLETS"
+
+	TrackSpecialHandlingTypeDO_NOT_STACK_PALLETS TrackSpecialHandlingType = "DO_NOT_STACK_PALLETS"
+
+	TrackSpecialHandlingTypeDRY_ICE TrackSpecialHandlingType = "DRY_ICE"
+
+	TrackSpecialHandlingTypeDRY_ICE_ADDED TrackSpecialHandlingType = "DRY_ICE_ADDED"
+
+	TrackSpecialHandlingTypeEAST_COAST_SPECIAL TrackSpecialHandlingType = "EAST_COAST_SPECIAL"
+
+	TrackSpecialHandlingTypeELECTRONIC_COD TrackSpecialHandlingType = "ELECTRONIC_COD"
+
+	TrackSpecialHandlingTypeELECTRONIC_DOCUMENTS_WITH_ORIGINALS TrackSpecialHandlingType = "ELECTRONIC_DOCUMENTS_WITH_ORIGINALS"
+
+	TrackSpecialHandlingTypeELECTRONIC_SIGNATURE_SERVICE TrackSpecialHandlingType = "ELECTRONIC_SIGNATURE_SERVICE"
+
+	TrackSpecialHandlingTypeELECTRONIC_TRADE_DOCUMENTS TrackSpecialHandlingType = "ELECTRONIC_TRADE_DOCUMENTS"
+
+	TrackSpecialHandlingTypeEVENING_DELIVERY TrackSpecialHandlingType = "EVENING_DELIVERY"
+
+	TrackSpecialHandlingTypeEXCLUSIVE_USE TrackSpecialHandlingType = "EXCLUSIVE_USE"
+
+	TrackSpecialHandlingTypeEXTENDED_DELIVERY TrackSpecialHandlingType = "EXTENDED_DELIVERY"
+
+	TrackSpecialHandlingTypeEXTENDED_PICKUP TrackSpecialHandlingType = "EXTENDED_PICKUP"
+
+	TrackSpecialHandlingTypeEXTRA_LABOR TrackSpecialHandlingType = "EXTRA_LABOR"
+
+	TrackSpecialHandlingTypeEXTREME_LENGTH TrackSpecialHandlingType = "EXTREME_LENGTH"
+
+	TrackSpecialHandlingTypeFOOD TrackSpecialHandlingType = "FOOD"
+
+	TrackSpecialHandlingTypeFREIGHT_ON_VALUE_CARRIER_RISK TrackSpecialHandlingType = "FREIGHT_ON_VALUE_CARRIER_RISK"
+
+	TrackSpecialHandlingTypeFREIGHT_ON_VALUE_OWN_RISK TrackSpecialHandlingType = "FREIGHT_ON_VALUE_OWN_RISK"
+
+	TrackSpecialHandlingTypeFREIGHT_TO_COLLECT TrackSpecialHandlingType = "FREIGHT_TO_COLLECT"
+
+	TrackSpecialHandlingTypeFULLY_REGULATED_DANGEROUS_GOODS TrackSpecialHandlingType = "FULLY_REGULATED_DANGEROUS_GOODS"
+
+	TrackSpecialHandlingTypeGEL_PACKS_ADDED_OR_REPLACED TrackSpecialHandlingType = "GEL_PACKS_ADDED_OR_REPLACED"
+
+	TrackSpecialHandlingTypeGROUND_SUPPORT_FOR_SMARTPOST TrackSpecialHandlingType = "GROUND_SUPPORT_FOR_SMARTPOST"
+
+	TrackSpecialHandlingTypeGUARANTEED_FUNDS TrackSpecialHandlingType = "GUARANTEED_FUNDS"
+
+	TrackSpecialHandlingTypeHAZMAT TrackSpecialHandlingType = "HAZMAT"
+
+	TrackSpecialHandlingTypeHIGH_FLOOR TrackSpecialHandlingType = "HIGH_FLOOR"
+
+	TrackSpecialHandlingTypeHOLD_AT_LOCATION TrackSpecialHandlingType = "HOLD_AT_LOCATION"
+
+	TrackSpecialHandlingTypeHOLIDAY_DELIVERY TrackSpecialHandlingType = "HOLIDAY_DELIVERY"
+
+	TrackSpecialHandlingTypeINACCESSIBLE_DANGEROUS_GOODS TrackSpecialHandlingType = "INACCESSIBLE_DANGEROUS_GOODS"
+
+	TrackSpecialHandlingTypeINDIRECT_SIGNATURE_OPTION TrackSpecialHandlingType = "INDIRECT_SIGNATURE_OPTION"
+
+	TrackSpecialHandlingTypeINSIDE_DELIVERY TrackSpecialHandlingType = "INSIDE_DELIVERY"
+
+	TrackSpecialHandlingTypeINSIDE_PICKUP TrackSpecialHandlingType = "INSIDE_PICKUP"
+
+	TrackSpecialHandlingTypeINTERNATIONAL TrackSpecialHandlingType = "INTERNATIONAL"
+
+	TrackSpecialHandlingTypeINTERNATIONAL_CONTROLLED_EXPORT TrackSpecialHandlingType = "INTERNATIONAL_CONTROLLED_EXPORT"
+
+	TrackSpecialHandlingTypeINTERNATIONAL_MAIL_SERVICE TrackSpecialHandlingType = "INTERNATIONAL_MAIL_SERVICE"
+
+	TrackSpecialHandlingTypeINTERNATIONAL_TRAFFIC_IN_ARMS_REGULATIONS TrackSpecialHandlingType = "INTERNATIONAL_TRAFFIC_IN_ARMS_REGULATIONS"
+
+	TrackSpecialHandlingTypeLIFTGATE TrackSpecialHandlingType = "LIFTGATE"
+
+	TrackSpecialHandlingTypeLIFTGATE_DELIVERY TrackSpecialHandlingType = "LIFTGATE_DELIVERY"
+
+	TrackSpecialHandlingTypeLIFTGATE_PICKUP TrackSpecialHandlingType = "LIFTGATE_PICKUP"
+
+	TrackSpecialHandlingTypeLIMITED_ACCESS_DELIVERY TrackSpecialHandlingType = "LIMITED_ACCESS_DELIVERY"
+
+	TrackSpecialHandlingTypeLIMITED_ACCESS_PICKUP TrackSpecialHandlingType = "LIMITED_ACCESS_PICKUP"
+
+	TrackSpecialHandlingTypeLIMITED_QUANTITIES_DANGEROUS_GOODS TrackSpecialHandlingType = "LIMITED_QUANTITIES_DANGEROUS_GOODS"
+
+	TrackSpecialHandlingTypeMARKING_OR_TAGGING TrackSpecialHandlingType = "MARKING_OR_TAGGING"
+
+	TrackSpecialHandlingTypeNET_RETURN TrackSpecialHandlingType = "NET_RETURN"
+
+	TrackSpecialHandlingTypeNON_BUSINESS_TIME TrackSpecialHandlingType = "NON_BUSINESS_TIME"
+
+	TrackSpecialHandlingTypeNON_STANDARD_CONTAINER TrackSpecialHandlingType = "NON_STANDARD_CONTAINER"
+
+	TrackSpecialHandlingTypeNO_SIGNATURE_REQUIRED_SIGNATURE_OPTION TrackSpecialHandlingType = "NO_SIGNATURE_REQUIRED_SIGNATURE_OPTION"
+
+	TrackSpecialHandlingTypeORDER_NOTIFY TrackSpecialHandlingType = "ORDER_NOTIFY"
+
+	TrackSpecialHandlingTypeOTHER TrackSpecialHandlingType = "OTHER"
+
+	TrackSpecialHandlingTypeOTHER_REGULATED_MATERIAL_DOMESTIC TrackSpecialHandlingType = "OTHER_REGULATED_MATERIAL_DOMESTIC"
+
+	TrackSpecialHandlingTypeOVER_LENGTH TrackSpecialHandlingType = "OVER_LENGTH"
+
+	TrackSpecialHandlingTypePACKAGE_RETURN_PROGRAM TrackSpecialHandlingType = "PACKAGE_RETURN_PROGRAM"
+
+	TrackSpecialHandlingTypePIECE_COUNT_VERIFICATION TrackSpecialHandlingType = "PIECE_COUNT_VERIFICATION"
+
+	TrackSpecialHandlingTypePOISON TrackSpecialHandlingType = "POISON"
+
+	TrackSpecialHandlingTypePREPAID TrackSpecialHandlingType = "PREPAID"
+
+	TrackSpecialHandlingTypePRIORITY_ALERT TrackSpecialHandlingType = "PRIORITY_ALERT"
+
+	TrackSpecialHandlingTypePRIORITY_ALERT_PLUS TrackSpecialHandlingType = "PRIORITY_ALERT_PLUS"
+
+	TrackSpecialHandlingTypePROTECTION_FROM_FREEZING TrackSpecialHandlingType = "PROTECTION_FROM_FREEZING"
+
+	TrackSpecialHandlingTypeRAIL_MODE TrackSpecialHandlingType = "RAIL_MODE"
+
+	TrackSpecialHandlingTypeRECONSIGNMENT_CHARGES TrackSpecialHandlingType = "RECONSIGNMENT_CHARGES"
+
+	TrackSpecialHandlingTypeREROUTE_CROSS_COUNTRY_DEFERRED TrackSpecialHandlingType = "REROUTE_CROSS_COUNTRY_DEFERRED"
+
+	TrackSpecialHandlingTypeREROUTE_CROSS_COUNTRY_EXPEDITED TrackSpecialHandlingType = "REROUTE_CROSS_COUNTRY_EXPEDITED"
+
+	TrackSpecialHandlingTypeREROUTE_LOCAL TrackSpecialHandlingType = "REROUTE_LOCAL"
+
+	TrackSpecialHandlingTypeRESIDENTIAL_DELIVERY TrackSpecialHandlingType = "RESIDENTIAL_DELIVERY"
+
+	TrackSpecialHandlingTypeRESIDENTIAL_PICKUP TrackSpecialHandlingType = "RESIDENTIAL_PICKUP"
+
+	TrackSpecialHandlingTypeRETURNS_CLEARANCE TrackSpecialHandlingType = "RETURNS_CLEARANCE"
+
+	TrackSpecialHandlingTypeRETURNS_CLEARANCE_SPECIAL_ROUTING_REQUIRED TrackSpecialHandlingType = "RETURNS_CLEARANCE_SPECIAL_ROUTING_REQUIRED"
+
+	TrackSpecialHandlingTypeRETURN_MANAGER TrackSpecialHandlingType = "RETURN_MANAGER"
+
+	TrackSpecialHandlingTypeSATURDAY_DELIVERY TrackSpecialHandlingType = "SATURDAY_DELIVERY"
+
+	TrackSpecialHandlingTypeSHIPMENT_PLACED_IN_COLD_STORAGE TrackSpecialHandlingType = "SHIPMENT_PLACED_IN_COLD_STORAGE"
+
+	TrackSpecialHandlingTypeSINGLE_SHIPMENT TrackSpecialHandlingType = "SINGLE_SHIPMENT"
+
+	TrackSpecialHandlingTypeSMALL_QUANTITY_EXCEPTION TrackSpecialHandlingType = "SMALL_QUANTITY_EXCEPTION"
+
+	TrackSpecialHandlingTypeSORT_AND_SEGREGATE TrackSpecialHandlingType = "SORT_AND_SEGREGATE"
+
+	TrackSpecialHandlingTypeSPECIAL_DELIVERY TrackSpecialHandlingType = "SPECIAL_DELIVERY"
+
+	TrackSpecialHandlingTypeSPECIAL_EQUIPMENT TrackSpecialHandlingType = "SPECIAL_EQUIPMENT"
+
+	TrackSpecialHandlingTypeSTANDARD_GROUND_SERVICE TrackSpecialHandlingType = "STANDARD_GROUND_SERVICE"
+
+	TrackSpecialHandlingTypeSTORAGE TrackSpecialHandlingType = "STORAGE"
+
+	TrackSpecialHandlingTypeSUNDAY_DELIVERY TrackSpecialHandlingType = "SUNDAY_DELIVERY"
+
+	TrackSpecialHandlingTypeTHIRD_PARTY_BILLING TrackSpecialHandlingType = "THIRD_PARTY_BILLING"
+
+	TrackSpecialHandlingTypeTHIRD_PARTY_CONSIGNEE TrackSpecialHandlingType = "THIRD_PARTY_CONSIGNEE"
+
+	TrackSpecialHandlingTypeTOP_LOAD TrackSpecialHandlingType = "TOP_LOAD"
+
+	TrackSpecialHandlingTypeWEEKEND_DELIVERY TrackSpecialHandlingType = "WEEKEND_DELIVERY"
+
+	TrackSpecialHandlingTypeWEEKEND_PICKUP TrackSpecialHandlingType = "WEEKEND_PICKUP"
+)

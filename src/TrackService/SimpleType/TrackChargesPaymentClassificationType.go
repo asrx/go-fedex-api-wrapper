@@ -1,0 +1,10 @@
+package SimpleType
+
+type TrackChargesPaymentClassificationType string
+
+const (
+	TrackChargesPaymentClassificationTypeDUTIES_AND_TAXES TrackChargesPaymentClassificationType = "DUTIES_AND_TAXES"
+
+	TrackChargesPaymentClassificationTypeTRANSPORTATION TrackChargesPaymentClassificationType = "TRANSPORTATION"
+)
+

@@ -1,0 +1,86 @@
+package SimpleType
+
+
+type ShipmentSpecialServiceType string
+
+const (
+	ShipmentSpecialServiceTypeBROKER_SELECT_OPTION ShipmentSpecialServiceType = "BROKER_SELECT_OPTION"
+
+	ShipmentSpecialServiceTypeCALL_BEFORE_DELIVERY ShipmentSpecialServiceType = "CALL_BEFORE_DELIVERY"
+
+	ShipmentSpecialServiceTypeCOD ShipmentSpecialServiceType = "COD"
+
+	ShipmentSpecialServiceTypeCUSTOM_DELIVERY_WINDOW ShipmentSpecialServiceType = "CUSTOM_DELIVERY_WINDOW"
+
+	ShipmentSpecialServiceTypeCUT_FLOWERS ShipmentSpecialServiceType = "CUT_FLOWERS"
+
+	ShipmentSpecialServiceTypeDANGEROUS_GOODS ShipmentSpecialServiceType = "DANGEROUS_GOODS"
+
+	ShipmentSpecialServiceTypeDO_NOT_BREAK_DOWN_PALLETS ShipmentSpecialServiceType = "DO_NOT_BREAK_DOWN_PALLETS"
+
+	ShipmentSpecialServiceTypeDO_NOT_STACK_PALLETS ShipmentSpecialServiceType = "DO_NOT_STACK_PALLETS"
+
+	ShipmentSpecialServiceTypeDRY_ICE ShipmentSpecialServiceType = "DRY_ICE"
+
+	ShipmentSpecialServiceTypeEAST_COAST_SPECIAL ShipmentSpecialServiceType = "EAST_COAST_SPECIAL"
+
+	ShipmentSpecialServiceTypeELECTRONIC_TRADE_DOCUMENTS ShipmentSpecialServiceType = "ELECTRONIC_TRADE_DOCUMENTS"
+
+	ShipmentSpecialServiceTypeEVENT_NOTIFICATION ShipmentSpecialServiceType = "EVENT_NOTIFICATION"
+
+	ShipmentSpecialServiceTypeEXCLUDE_FROM_CONSOLIDATION ShipmentSpecialServiceType = "EXCLUDE_FROM_CONSOLIDATION"
+
+	ShipmentSpecialServiceTypeEXTREME_LENGTH ShipmentSpecialServiceType = "EXTREME_LENGTH"
+
+	ShipmentSpecialServiceTypeFEDEX_ONE_RATE ShipmentSpecialServiceType = "FEDEX_ONE_RATE"
+
+	ShipmentSpecialServiceTypeFOOD ShipmentSpecialServiceType = "FOOD"
+
+	ShipmentSpecialServiceTypeFREIGHT_GUARANTEE ShipmentSpecialServiceType = "FREIGHT_GUARANTEE"
+
+	ShipmentSpecialServiceTypeFREIGHT_TO_COLLECT ShipmentSpecialServiceType = "FREIGHT_TO_COLLECT"
+
+	ShipmentSpecialServiceTypeFUTURE_DAY_SHIPMENT ShipmentSpecialServiceType = "FUTURE_DAY_SHIPMENT"
+
+	ShipmentSpecialServiceTypeHOLD_AT_LOCATION ShipmentSpecialServiceType = "HOLD_AT_LOCATION"
+
+	ShipmentSpecialServiceTypeHOME_DELIVERY_PREMIUM ShipmentSpecialServiceType = "HOME_DELIVERY_PREMIUM"
+
+	ShipmentSpecialServiceTypeINSIDE_DELIVERY ShipmentSpecialServiceType = "INSIDE_DELIVERY"
+
+	ShipmentSpecialServiceTypeINSIDE_PICKUP ShipmentSpecialServiceType = "INSIDE_PICKUP"
+
+	ShipmentSpecialServiceTypeINTERNATIONAL_CONTROLLED_EXPORT_SERVICE ShipmentSpecialServiceType = "INTERNATIONAL_CONTROLLED_EXPORT_SERVICE"
+
+	ShipmentSpecialServiceTypeINTERNATIONAL_TRAFFIC_IN_ARMS_REGULATIONS ShipmentSpecialServiceType = "INTERNATIONAL_TRAFFIC_IN_ARMS_REGULATIONS"
+
+	ShipmentSpecialServiceTypeLIFTGATE_DELIVERY ShipmentSpecialServiceType = "LIFTGATE_DELIVERY"
+
+	ShipmentSpecialServiceTypeLIFTGATE_PICKUP ShipmentSpecialServiceType = "LIFTGATE_PICKUP"
+
+	ShipmentSpecialServiceTypeLIMITED_ACCESS_DELIVERY ShipmentSpecialServiceType = "LIMITED_ACCESS_DELIVERY"
+
+	ShipmentSpecialServiceTypeLIMITED_ACCESS_PICKUP ShipmentSpecialServiceType = "LIMITED_ACCESS_PICKUP"
+
+	ShipmentSpecialServiceTypeOVER_LENGTH ShipmentSpecialServiceType = "OVER_LENGTH"
+
+	ShipmentSpecialServiceTypePENDING_SHIPMENT ShipmentSpecialServiceType = "PENDING_SHIPMENT"
+
+	ShipmentSpecialServiceTypePHARMACY_DELIVERY ShipmentSpecialServiceType = "PHARMACY_DELIVERY"
+
+	ShipmentSpecialServiceTypePOISON ShipmentSpecialServiceType = "POISON"
+
+	ShipmentSpecialServiceTypePROTECTION_FROM_FREEZING ShipmentSpecialServiceType = "PROTECTION_FROM_FREEZING"
+
+	ShipmentSpecialServiceTypeRETURNS_CLEARANCE ShipmentSpecialServiceType = "RETURNS_CLEARANCE"
+
+	ShipmentSpecialServiceTypeRETURN_SHIPMENT ShipmentSpecialServiceType = "RETURN_SHIPMENT"
+
+	ShipmentSpecialServiceTypeSATURDAY_DELIVERY ShipmentSpecialServiceType = "SATURDAY_DELIVERY"
+
+	ShipmentSpecialServiceTypeSATURDAY_PICKUP ShipmentSpecialServiceType = "SATURDAY_PICKUP"
+
+	ShipmentSpecialServiceTypeTHIRD_PARTY_CONSIGNEE ShipmentSpecialServiceType = "THIRD_PARTY_CONSIGNEE"
+
+	ShipmentSpecialServiceTypeTOP_LOAD ShipmentSpecialServiceType = "TOP_LOAD"
+)

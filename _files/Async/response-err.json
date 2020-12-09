@@ -1,0 +1,25 @@
+{
+  "XMLName":{
+    "Space":"http://fedex.com/ws/async/v4",
+    "Local":"RetrieveJobResultsReply"
+  },
+  "HighestSeverity":"ERROR",
+  "Notifications":[
+    {
+      "Severity":"ERROR",
+      "Source":"async",
+      "Code":"1130",
+      "Message":"Job ID not found",
+      "LocalizedMessage":"Job ID not found",
+      "MessageParameters":null
+    }
+  ],
+  "TransactionDetail":null,
+  "Version":{
+    "ServiceId":"async",
+    "Major":4,
+    "Intermediate":0,
+    "Minor":0
+  },
+  "Artifacts":null
+}

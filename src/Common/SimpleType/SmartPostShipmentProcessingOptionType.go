@@ -1,0 +1,7 @@
+package SimpleType
+
+type SmartPostShipmentProcessingOptionType string
+
+const (
+	SmartPostShipmentProcessingOptionTypeGROUND_TRACKING_NUMBER_REQUESTED SmartPostShipmentProcessingOptionType = "GROUND_TRACKING_NUMBER_REQUESTED"
+)

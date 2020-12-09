@@ -1,0 +1,21 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <ShipmentReply xmlns="http://fedex.com/ws/ship/v23">
+            <HighestSeverity>NOTE</HighestSeverity>
+            <Notifications>
+                <Severity>NOTE</Severity>
+                <Source>ship</Source>
+                <Code>8159</Code>
+                <Message>Shipment Delete was requested for a tracking number already in a deleted state.</Message>
+                <LocalizedMessage>Shipment Delete was requested for a tracking number already in a deleted state.</LocalizedMessage>
+            </Notifications>
+            <Version>
+                <ServiceId>ship</ServiceId>
+                <Major>23</Major>
+                <Intermediate>0</Intermediate>
+                <Minor>0</Minor>
+            </Version>
+        </ShipmentReply>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

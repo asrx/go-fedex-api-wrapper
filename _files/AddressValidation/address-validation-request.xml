@@ -1,0 +1,41 @@
+<Envelope
+        xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body
+            xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+        <AddressValidationRequest
+                xmlns="http://fedex.com/ws/addressvalidation/v4">
+            <WebAuthenticationDetail>
+                <UserCredential>
+                    <Key>************</Key>
+                    <Password>************</Password>
+                </UserCredential>
+            </WebAuthenticationDetail>
+            <ClientDetail>
+                <AccountNumber>************</AccountNumber>
+                <MeterNumber>************</MeterNumber>
+            </ClientDetail>
+            <Version>
+                <ServiceId>aval</ServiceId>
+                <Major>4</Major>
+                <Intermediate>0</Intermediate>
+                <Minor>0</Minor>
+            </Version>
+            <InEffectAsOfTimestamp>0001-01-01T00:00:00Z</InEffectAsOfTimestamp>
+            <AddressesToValidate>
+                <Contact>
+                    <PersonName>Alex</PersonName>
+                    <CompanyName>ANL</CompanyName>
+                    <PhoneNumber>8000000000</PhoneNumber>
+                    <EMailAddress>alex.cao@longyuan-sh.com</EMailAddress>
+                </Contact>
+                <Address>
+                    <StreetLines>401 Independence Rd</StreetLines>
+                    <City>FLORENCE</City>
+                    <StateOrProvinceCode>NJ</StateOrProvinceCode>
+                    <PostalCode>08518</PostalCode>
+                    <CountryCode>US</CountryCode>
+                </Address>
+            </AddressesToValidate>
+        </AddressValidationRequest>
+    </Body>
+</Envelope>

@@ -1,0 +1,262 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <TrackReply xmlns="http://fedex.com/ws/track/v16">
+            <HighestSeverity>SUCCESS</HighestSeverity>
+            <Notifications>
+                <Severity>SUCCESS</Severity>
+                <Source>trck</Source>
+                <Code>0</Code>
+                <Message>Request was successfully processed.</Message>
+                <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+            </Notifications>
+            <Version>
+                <ServiceId>trck</ServiceId>
+                <Major>16</Major>
+                <Intermediate>0</Intermediate>
+                <Minor>0</Minor>
+            </Version>
+            <CompletedTrackDetails>
+                <HighestSeverity>SUCCESS</HighestSeverity>
+                <Notifications>
+                    <Severity>SUCCESS</Severity>
+                    <Source>trck</Source>
+                    <Code>0</Code>
+                    <Message>Request was successfully processed.</Message>
+                    <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+                </Notifications>
+                <DuplicateWaybill>false</DuplicateWaybill>
+                <MoreData>false</MoreData>
+                <TrackDetailsCount>0</TrackDetailsCount>
+                <TrackDetails>
+                    <Notification>
+                        <Severity>SUCCESS</Severity>
+                        <Source>trck</Source>
+                        <Code>0</Code>
+                        <Message>Request was successfully processed.</Message>
+                        <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+                    </Notification>
+                    <TrackingNumber>398939843338</TrackingNumber>
+                    <TrackingNumberUniqueIdentifier>12020~398939843338~FDEG</TrackingNumberUniqueIdentifier>
+                    <StatusDetail>
+                        <CreationTime>2020-11-14T00:00:00</CreationTime>
+                        <Code>OC</Code>
+                        <Description>Shipment information sent to FedEx</Description>
+                        <Location>
+                            <Residential>false</Residential>
+                        </Location>
+                        <AncillaryDetails>
+                            <Reason>IN001</Reason>
+                            <ReasonDescription>Please check back later for shipment status or subscribe for e-mail notifications</ReasonDescription>
+                        </AncillaryDetails>
+                    </StatusDetail>
+                    <ServiceCommitMessage>The delivery date may be updated when FedEx receives the package.</ServiceCommitMessage>
+                    <DestinationServiceArea>OC</DestinationServiceArea>
+                    <CarrierCode>FDXG</CarrierCode>
+                    <OperatingCompanyOrCarrierDescription>FedEx Ground</OperatingCompanyOrCarrierDescription>
+                    <Service>
+                        <Type>FEDEX_GROUND</Type>
+                        <Description>FedEx Ground</Description>
+                        <ShortDescription>FG</ShortDescription>
+                    </Service>
+                    <PackageWeight>
+                        <Units>LB</Units>
+                        <Value>39.6</Value>
+                    </PackageWeight>
+                    <Packaging>Package</Packaging>
+                    <PackagingType>YOUR_PACKAGING</PackagingType>
+                    <PhysicalPackagingType>PACKAGE</PhysicalPackagingType>
+                    <PackageSequenceNumber>1</PackageSequenceNumber>
+                    <PackageCount>1</PackageCount>
+                    <Payments>
+                        <Classification>TRANSPORTATION</Classification>
+                        <Type>SHIPPER_ACCOUNT</Type>
+                        <Description>Shipper</Description>
+                    </Payments>
+                    <ShipperAddress>
+                        <City>Irwindale</City>
+                        <StateOrProvinceCode>CA</StateOrProvinceCode>
+                        <CountryCode>US</CountryCode>
+                        <CountryName>United States</CountryName>
+                        <Residential>false</Residential>
+                    </ShipperAddress>
+                    <DatesOrTimes>
+                        <Type>ESTIMATED_DELIVERY</Type>
+                        <DateOrTimestamp>2020-11-17T00:00:00</DateOrTimestamp>
+                    </DatesOrTimes>
+                    <DatesOrTimes>
+                        <Type>ANTICIPATED_TENDER</Type>
+                        <DateOrTimestamp>2020-11-15T00:00:00</DateOrTimestamp>
+                    </DatesOrTimes>
+                    <DestinationAddress>
+                        <City>San Bernardino</City>
+                        <StateOrProvinceCode>CA</StateOrProvinceCode>
+                        <CountryCode>US</CountryCode>
+                        <CountryName>United States</CountryName>
+                        <Residential>false</Residential>
+                    </DestinationAddress>
+                    <DeliveryAttempts>0</DeliveryAttempts>
+                    <TotalUniqueAddressCountInConsolidation>0</TotalUniqueAddressCountInConsolidation>
+                    <NotificationEventsAvailable>ON_DELIVERY</NotificationEventsAvailable>
+                    <NotificationEventsAvailable>ON_EXCEPTION</NotificationEventsAvailable>
+                    <NotificationEventsAvailable>ON_ESTIMATED_DELIVERY</NotificationEventsAvailable>
+                    <NotificationEventsAvailable>ON_TENDER</NotificationEventsAvailable>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>INDIRECT_SIGNATURE_RELEASE</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>REDIRECT_TO_HOLD_AT_LOCATION</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>REROUTE</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>RESCHEDULE</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <Events>
+                        <Timestamp>2020-11-14T23:51:00-08:00</Timestamp>
+                        <EventType>OC</EventType>
+                        <EventDescription>Shipment information sent to FedEx</EventDescription>
+                        <Address>
+                            <PostalCode>91702</PostalCode>
+                            <CountryCode>US</CountryCode>
+                            <CountryName>United States</CountryName>
+                            <Residential>false</Residential>
+                        </Address>
+                        <ArrivalLocation>CUSTOMER</ArrivalLocation>
+                    </Events>
+                </TrackDetails>
+            </CompletedTrackDetails>
+            <CompletedTrackDetails>
+                <HighestSeverity>SUCCESS</HighestSeverity>
+                <Notifications>
+                    <Severity>SUCCESS</Severity>
+                    <Source>trck</Source>
+                    <Code>0</Code>
+                    <Message>Request was successfully processed.</Message>
+                    <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+                </Notifications>
+                <DuplicateWaybill>false</DuplicateWaybill>
+                <MoreData>false</MoreData>
+                <TrackDetailsCount>0</TrackDetailsCount>
+                <TrackDetails>
+                    <Notification>
+                        <Severity>SUCCESS</Severity>
+                        <Source>trck</Source>
+                        <Code>0</Code>
+                        <Message>Request was successfully processed.</Message>
+                        <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+                    </Notification>
+                    <TrackingNumber>398939498219</TrackingNumber>
+                    <TrackingNumberUniqueIdentifier>12020~398939498219~FDEG</TrackingNumberUniqueIdentifier>
+                    <StatusDetail>
+                        <CreationTime>2020-11-14T00:00:00</CreationTime>
+                        <Code>OC</Code>
+                        <Description>Shipment information sent to FedEx</Description>
+                        <Location>
+                            <Residential>false</Residential>
+                        </Location>
+                        <AncillaryDetails>
+                            <Reason>IN001</Reason>
+                            <ReasonDescription>Please check back later for shipment status or subscribe for e-mail notifications</ReasonDescription>
+                        </AncillaryDetails>
+                    </StatusDetail>
+                    <ServiceCommitMessage>The delivery date may be updated when FedEx receives the package.</ServiceCommitMessage>
+                    <DestinationServiceArea>OC</DestinationServiceArea>
+                    <CarrierCode>FDXG</CarrierCode>
+                    <OperatingCompanyOrCarrierDescription>FedEx Ground</OperatingCompanyOrCarrierDescription>
+                    <OtherIdentifiers>
+                        <PackageIdentifier>
+                            <Type>STANDARD_MPS</Type>
+                            <Value>398939498219</Value>
+                        </PackageIdentifier>
+                        <TrackingNumberUniqueIdentifier>12020</TrackingNumberUniqueIdentifier>
+                    </OtherIdentifiers>
+                    <Service>
+                        <Type>FEDEX_GROUND</Type>
+                        <Description>FedEx Ground</Description>
+                        <ShortDescription>FG</ShortDescription>
+                    </Service>
+                    <PackageWeight>
+                        <Units>LB</Units>
+                        <Value>26.9</Value>
+                    </PackageWeight>
+                    <ShipmentWeight>
+                        <Units>LB</Units>
+                        <Value>1255.9</Value>
+                    </ShipmentWeight>
+                    <Packaging>Package</Packaging>
+                    <PackagingType>YOUR_PACKAGING</PackagingType>
+                    <PhysicalPackagingType>PACKAGE</PhysicalPackagingType>
+                    <PackageSequenceNumber>1</PackageSequenceNumber>
+                    <PackageCount>37</PackageCount>
+                    <Payments>
+                        <Classification>TRANSPORTATION</Classification>
+                        <Type>SHIPPER_ACCOUNT</Type>
+                        <Description>Shipper</Description>
+                    </Payments>
+                    <ShipperAddress>
+                        <City>Irwindale</City>
+                        <StateOrProvinceCode>CA</StateOrProvinceCode>
+                        <CountryCode>US</CountryCode>
+                        <CountryName>United States</CountryName>
+                        <Residential>false</Residential>
+                    </ShipperAddress>
+                    <DatesOrTimes>
+                        <Type>ESTIMATED_DELIVERY</Type>
+                        <DateOrTimestamp>2020-11-18T00:00:00</DateOrTimestamp>
+                    </DatesOrTimes>
+                    <DatesOrTimes>
+                        <Type>ANTICIPATED_TENDER</Type>
+                        <DateOrTimestamp>2020-11-15T00:00:00</DateOrTimestamp>
+                    </DatesOrTimes>
+                    <DestinationAddress>
+                        <City>SAN JOSE</City>
+                        <StateOrProvinceCode>CA</StateOrProvinceCode>
+                        <CountryCode>US</CountryCode>
+                        <CountryName>United States</CountryName>
+                        <Residential>false</Residential>
+                    </DestinationAddress>
+                    <DeliveryAttempts>0</DeliveryAttempts>
+                    <TotalUniqueAddressCountInConsolidation>0</TotalUniqueAddressCountInConsolidation>
+                    <NotificationEventsAvailable>ON_DELIVERY</NotificationEventsAvailable>
+                    <NotificationEventsAvailable>ON_EXCEPTION</NotificationEventsAvailable>
+                    <NotificationEventsAvailable>ON_ESTIMATED_DELIVERY</NotificationEventsAvailable>
+                    <NotificationEventsAvailable>ON_TENDER</NotificationEventsAvailable>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>INDIRECT_SIGNATURE_RELEASE</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>REDIRECT_TO_HOLD_AT_LOCATION</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>REROUTE</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <DeliveryOptionEligibilityDetails>
+                        <Option>RESCHEDULE</Option>
+                        <Eligibility>INELIGIBLE</Eligibility>
+                    </DeliveryOptionEligibilityDetails>
+                    <Events>
+                        <Timestamp>2020-11-14T22:36:00-08:00</Timestamp>
+                        <EventType>OC</EventType>
+                        <EventDescription>Shipment information sent to FedEx</EventDescription>
+                        <Address>
+                            <PostalCode>91702</PostalCode>
+                            <CountryCode>US</CountryCode>
+                            <CountryName>United States</CountryName>
+                            <Residential>false</Residential>
+                        </Address>
+                        <ArrivalLocation>CUSTOMER</ArrivalLocation>
+                    </Events>
+                </TrackDetails>
+            </CompletedTrackDetails>
+        </TrackReply>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

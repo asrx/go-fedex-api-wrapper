@@ -1,0 +1,7 @@
+package SimpleType
+
+type PendingShipmentProcessingOptionType string
+
+const (
+	PendingShipmentProcessingOptionTypeALLOW_MODIFICATIONS PendingShipmentProcessingOptionType = "ALLOW_MODIFICATIONS"
+)

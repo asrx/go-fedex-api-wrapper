@@ -1,0 +1,31 @@
+<Envelope
+        xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body
+            xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+        <ValidatePostalRequest
+                xmlns="http://fedex.com/ws/cnty/v8">
+            <WebAuthenticationDetail>
+                <UserCredential>
+                    <Key>********</Key>
+                    <Password>********</Password>
+                </UserCredential>
+            </WebAuthenticationDetail>
+            <ClientDetail>
+                <AccountNumber>********</AccountNumber>
+                <MeterNumber>********</MeterNumber>
+            </ClientDetail>
+            <Version>
+                <ServiceId>cnty</ServiceId>
+                <Major>8</Major>
+                <Intermediate>0</Intermediate>
+                <Minor>0</Minor>
+            </Version>
+            <ShipDateTime>2020-11-14T16:52:25.313049+08:00</ShipDateTime>
+            <Address>
+                <PostalCode>96813</PostalCode>
+                <CountryCode>US</CountryCode>
+            </Address>
+            <CarrierCode>FDXE</CarrierCode>
+        </ValidatePostalRequest>
+    </Body>
+</Envelope>

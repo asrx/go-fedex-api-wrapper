@@ -1,0 +1,30 @@
+package SimpleType
+
+
+type RequestedShippingDocumentType string
+
+const (
+	RequestedShippingDocumentTypeCERTIFICATE_OF_ORIGIN RequestedShippingDocumentType = "CERTIFICATE_OF_ORIGIN"
+
+	RequestedShippingDocumentTypeCOMMERCIAL_INVOICE RequestedShippingDocumentType = "COMMERCIAL_INVOICE"
+
+	RequestedShippingDocumentTypeCUSTOMER_SPECIFIED_LABELS RequestedShippingDocumentType = "CUSTOMER_SPECIFIED_LABELS"
+
+	RequestedShippingDocumentTypeDANGEROUS_GOODS_SHIPPERS_DECLARATION RequestedShippingDocumentType = "DANGEROUS_GOODS_SHIPPERS_DECLARATION"
+
+	RequestedShippingDocumentTypeEXPORT_DECLARATION RequestedShippingDocumentType = "EXPORT_DECLARATION"
+
+	RequestedShippingDocumentTypeFEDEX_FREIGHT_STRAIGHT_BILL_OF_LADING RequestedShippingDocumentType = "FEDEX_FREIGHT_STRAIGHT_BILL_OF_LADING"
+
+	RequestedShippingDocumentTypeGENERAL_AGENCY_AGREEMENT RequestedShippingDocumentType = "GENERAL_AGENCY_AGREEMENT"
+
+	RequestedShippingDocumentTypeLABEL RequestedShippingDocumentType = "LABEL"
+
+	RequestedShippingDocumentTypeNAFTA_CERTIFICATE_OF_ORIGIN RequestedShippingDocumentType = "NAFTA_CERTIFICATE_OF_ORIGIN"
+
+	RequestedShippingDocumentTypePRO_FORMA_INVOICE RequestedShippingDocumentType = "PRO_FORMA_INVOICE"
+
+	RequestedShippingDocumentTypeRETURN_INSTRUCTIONS RequestedShippingDocumentType = "RETURN_INSTRUCTIONS"
+
+	RequestedShippingDocumentTypeVICS_BILL_OF_LADING RequestedShippingDocumentType = "VICS_BILL_OF_LADING"
+)

@@ -1,0 +1,18 @@
+package SimpleType
+
+
+type RequiredShippingDocumentType string
+
+const (
+	RequiredShippingDocumentTypeCANADIAN_B13A RequiredShippingDocumentType = "CANADIAN_B13A"
+
+	RequiredShippingDocumentTypeCERTIFICATE_OF_ORIGIN RequiredShippingDocumentType = "CERTIFICATE_OF_ORIGIN"
+
+	RequiredShippingDocumentTypeCOMMERCIAL_INVOICE RequiredShippingDocumentType = "COMMERCIAL_INVOICE"
+
+	RequiredShippingDocumentTypeINTERNATIONAL_AIRWAY_BILL RequiredShippingDocumentType = "INTERNATIONAL_AIRWAY_BILL"
+
+	RequiredShippingDocumentTypeMAIL_SERVICE_AIRWAY_BILL RequiredShippingDocumentType = "MAIL_SERVICE_AIRWAY_BILL"
+
+	RequiredShippingDocumentTypeSHIPPERS_EXPORT_DECLARATION RequiredShippingDocumentType = "SHIPPERS_EXPORT_DECLARATION"
+)
