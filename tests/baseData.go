@@ -6,6 +6,8 @@ import (
 )
 
 var ServiceType = SimpleType2.ServiceTypeFEDEX_GROUND
+var ServiceTypeSmartPost = SimpleType2.ServiceTypeSMART_POST
+
 var PackageType = SimpleType2.PackagingTypeYOUR_PACKAGING
 
 var DropoffType = SimpleType2.DropoffTypeREGULAR_PICKUP
@@ -50,6 +52,15 @@ var Recipient = &ComplexType2.Party{
 		CountryCode:           "US",
 		Residential:           false,
 	},
+
+	//Address:       &ComplexType2.Address{
+	//	StreetLines:           []string{"1028 OGDEN AVE"},
+	//	City:                  "SUPERIOR",
+	//	StateOrProvinceCode:   "WI",
+	//	PostalCode:            "54880",
+	//	CountryCode:           "US",
+	//	Residential:           false,
+	//},
 }
 
 var ShippingChargesPayment = &ComplexType2.Payment{
@@ -72,6 +83,8 @@ var LabelSpecification = &ComplexType2.LabelSpecification{
 	ImageType:                &ImageType_PDF,
 	LabelStockType:           &LabelStockTypeSTOCK_4X6,
 }
+var GroupPkgCount uint = 2
+
 var PkgCount uint = 1
 
 func GetPackages() []*ComplexType2.RequestedPackageLineItem {
@@ -116,6 +129,99 @@ func GetPackages() []*ComplexType2.RequestedPackageLineItem {
 				OptionType:             &_signatureOptionType,
 			},
 		},
+	})
+
+	return _packages
+}
+
+func GetPackages2() []*ComplexType2.RequestedPackageLineItem {
+	var _SequenceNumber uint = 2
+	var _GroupPackageCount uint = 1
+	var _WeightUnits = SimpleType2.WeightUnitsLB
+	var _length uint = 20
+	var _width uint = 20
+	var _height uint = 20
+	var _dimensionsUnits = SimpleType2.LinearUnitsIN
+	var _customerReferenceType = SimpleType2.CustomerReferenceTypeCUSTOMER_REFERENCE
+	var _customerReferenceValue = "yyy"
+
+	var _ptype = SimpleType2.PackageSpecialServiceTypeSIGNATURE_OPTION
+
+	var _specialServiceTypes = []*SimpleType2.PackageSpecialServiceType{ &_ptype }
+	var _signatureOptionType = SimpleType2.SignatureOptionTypeDIRECT
+
+
+	var _packages = []*ComplexType2.RequestedPackageLineItem{}
+	_packages = append(_packages, &ComplexType2.RequestedPackageLineItem{
+		SequenceNumber:               &_SequenceNumber,
+		GroupPackageCount:            &_GroupPackageCount,
+		//InsuredValue:                 nil,
+		Weight:                       &ComplexType2.Weight{
+			Units: &_WeightUnits,
+			Value: 33,
+		},
+		Dimensions:                   &ComplexType2.Dimensions{
+			Length: &_length,
+			Width:  &_width,
+			Height: &_height,
+			Units:  &_dimensionsUnits,
+		},
+		CustomerReferences:           &ComplexType2.CustomerReference{
+			CustomerReferenceType: &_customerReferenceType,
+			Value:                 _customerReferenceValue,
+		},
+		SpecialServicesRequested:     &ComplexType2.PackageSpecialServicesRequested{
+			SpecialServiceTypes:	_specialServiceTypes,
+			SignatureOptionDetail: &ComplexType2.SignatureOptionDetail{
+				OptionType:             &_signatureOptionType,
+			},
+		},
+	})
+
+	return _packages
+}
+
+func GetPackagesSmartPost() []*ComplexType2.RequestedPackageLineItem {
+	var _SequenceNumber uint = 1
+	var _GroupPackageCount uint = 1
+	var _WeightUnits = SimpleType2.WeightUnitsLB
+	var _length uint = 10
+	var _width uint = 7
+	var _height uint = 8
+	var _dimensionsUnits = SimpleType2.LinearUnitsIN
+	var _customerReferenceType = SimpleType2.CustomerReferenceTypeCUSTOMER_REFERENCE
+	var _customerReferenceValue = "xxxx"
+
+	/*var _ptype = SimpleType2.PackageSpecialServiceTypeSIGNATURE_OPTION
+	var _specialServiceTypes = []*SimpleType2.PackageSpecialServiceType{ &_ptype }
+	var _signatureOptionType = SimpleType2.SignatureOptionTypeDIRECT*/
+
+
+	var _packages = []*ComplexType2.RequestedPackageLineItem{}
+	_packages = append(_packages, &ComplexType2.RequestedPackageLineItem{
+		SequenceNumber:               &_SequenceNumber,
+		GroupPackageCount:            &_GroupPackageCount,
+		//InsuredValue:                 nil,
+		Weight:                       &ComplexType2.Weight{
+			Units: &_WeightUnits,
+			Value: 20,
+		},
+		Dimensions:                   &ComplexType2.Dimensions{
+			Length: &_length,
+			Width:  &_width,
+			Height: &_height,
+			Units:  &_dimensionsUnits,
+		},
+		CustomerReferences:           &ComplexType2.CustomerReference{
+			CustomerReferenceType: &_customerReferenceType,
+			Value:                 _customerReferenceValue,
+		},
+		//SpecialServicesRequested:     &ComplexType2.PackageSpecialServicesRequested{
+		//	SpecialServiceTypes:	_specialServiceTypes,
+		//	SignatureOptionDetail: &ComplexType2.SignatureOptionDetail{
+		//		OptionType:             &_signatureOptionType,
+		//	},
+		//},
 	})
 
 	return _packages

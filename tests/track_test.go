@@ -34,7 +34,7 @@ func Test_TrackByNo(t *testing.T)  {
 		ProcessingOptions: 					   []*SimpleType.TrackRequestProcessingOptionType{ &_processingOption },
 	}
 
-	c := TrackService.NewTrackPortType(false)
+	c := TrackService.NewTrackPortType(_DEBUG)
 	ret, err := c.Track(_trackRequet)
 
 	if err != nil {

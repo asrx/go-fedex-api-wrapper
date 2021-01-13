@@ -8,6 +8,7 @@ const (
 	_ACCOUNT = ""
 	_METER = ""
 
+	_DEBUG = false
 )
 
 func GetAccount() string {

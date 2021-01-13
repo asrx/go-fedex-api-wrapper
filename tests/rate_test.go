@@ -52,7 +52,7 @@ func Test_Rate24(t *testing.T){
 		RequestedShipment:       _RequestedShipment,
 	}
 
-	c := rate.NewRatePortType(false)
+	c := rate.NewRatePortType(_DEBUG)
 	ret, err := c.GetRates(_RateRequest)
 
 	if err != nil {

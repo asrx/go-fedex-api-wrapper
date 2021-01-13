@@ -25,7 +25,7 @@ func Test_Country(t *testing.T)  {
 		CarrierCode: 			 &_carrierCode,
 	}
 
-	c := CountryService.NewCountryPortType(false)
+	c := CountryService.NewCountryPortType(_DEBUG)
 	ret, err := c.ValidatePostal(&_ValidatePostalRequest)
 
 	if err != nil {

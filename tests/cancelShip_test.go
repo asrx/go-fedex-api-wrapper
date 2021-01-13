@@ -32,12 +32,12 @@ func Test_CancelShip(t *testing.T) {
 		ShipTimestamp:           time.Now(),
 		TrackingId:              &ComplexType2.TrackingId{
 			TrackingIdType: &_trackIdType,
-			TrackingNumber: "399541845233",
+			TrackingNumber: "61290989508920201712",
 		},
 		DeletionControl:         &_deletionControl,
 	}
 
-	c := ShipService.NewShipPortType(true)
+	c := ShipService.NewShipPortType(_DEBUG)
 	ret, err := c.DeleteShipment(deleteShipmentRequest)
 
 	if err != nil {

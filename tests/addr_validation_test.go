@@ -38,7 +38,7 @@ func Test_addrValidation(t *testing.T) {
 		AddressesToValidate:     addrList,
 	}
 
-	c := AddressValidationService.NewAddressValidationPortType(false)
+	c := AddressValidationService.NewAddressValidationPortType(_DEBUG)
 	ret, err := c.AddressValidation(&addrRequest)
 
 	if err != nil {

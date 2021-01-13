@@ -21,7 +21,7 @@ func Test_Async(t *testing.T) {
 		//Filters:                 nil,
 	}
 
-	c := AsyncService.NewASYNCPortType(true)
+	c := AsyncService.NewASYNCPortType(_DEBUG)
 	ret, err := c.RetrieveJobResults(request)
 
 	if err != nil {

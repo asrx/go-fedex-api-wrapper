@@ -77,6 +77,10 @@ type RequestedShipment struct {
 	// 指定客户是否希望在这批货物的价格报价中提供估计的关税和税收。只适用于国际运输。
 	EdtRequestType *EdtRequestType `xml:"EdtRequestType,omitempty"`
 
+	// 主单号
+	// Only used with multiple-transaction shipments, to identify the master package in a multi-piece shipment.
+	MasterTrackingId *TrackingId `xml:"MasterTrackingId,omitempty"`
+
 	// The total number of packages in the entire shipment (even when the shipment spans multiple transactions.)
 	PackageCount *uint `xml:"PackageCount,omitempty"`
 
