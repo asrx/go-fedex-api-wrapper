@@ -19,7 +19,7 @@ type trackPortType struct {
 }
 
 var _ProductionUrl = "https://ws.fedex.com:443/web-services/track"
-var _TestUrl = "https://ws.fedex.com:443/web-services/track"
+var _TestUrl = "https://wsbeta.fedex.com:443/web-services/track"
 
 func NewTrackPortType(testEnv bool) TrackPortType {
 	var client = new(soap.Client)
