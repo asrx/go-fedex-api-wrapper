@@ -1,8 +1,8 @@
 package ComplexType
 
 import (
-	. "github.com/asrx/go-fedex-api-wrapper/src/Common/ComplexType"
 	"encoding/xml"
+	. "github.com/asrx/go-fedex-api-wrapper/src/Common/ComplexType"
 )
 
 type DeleteTagRequest struct {

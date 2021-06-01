@@ -2,12 +2,13 @@ package ComplexType
 
 import (
 	"github.com/asrx/go-fedex-api-wrapper/src/Common/SimpleType"
+	"time"
 )
 
 type PickupDetail struct {
-	ReadyDateTime string `xml:"ReadyDateTime,omitempty"`
+	ReadyDateTime time.Time `xml:"ReadyDateTime,omitempty"`
 
-	LatestPickupDateTime string `xml:"LatestPickupDateTime,omitempty"`
+	LatestPickupDateTime time.Time `xml:"LatestPickupDateTime,omitempty"`
 
 	CourierInstructions string `xml:"CourierInstructions,omitempty"`
 
