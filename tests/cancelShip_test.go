@@ -13,6 +13,7 @@ import (
 )
 
 func Test_CancelShip(t *testing.T) {
+	Number := "288109024067"
 	_trackIdType := SimpleType.TrackingIdTypeFEDEX
 
 	_deletionControl := SimpleType2.DeletionControlTypeDELETE_ALL_PACKAGES
@@ -32,7 +33,7 @@ func Test_CancelShip(t *testing.T) {
 		ShipTimestamp:           time.Now(),
 		TrackingId:              &ComplexType2.TrackingId{
 			TrackingIdType: &_trackIdType,
-			TrackingNumber: "61290989508920201712",
+			TrackingNumber: Number,
 		},
 		DeletionControl:         &_deletionControl,
 	}
@@ -53,5 +54,8 @@ func Test_CancelShip(t *testing.T) {
 		fmt.Printf("%+v\n",ret)
 		fmt.Println("json: ")
 		fmt.Println(string(byte))
+		fmt.Println("======================")
+		fmt.Println(ret.Notifications[0].Message)
+		fmt.Println("======================")
 	}
 }

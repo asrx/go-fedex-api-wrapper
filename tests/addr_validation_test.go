@@ -20,10 +20,10 @@ func Test_addrValidation(t *testing.T) {
 	addrList := []*ComplexType.AddressToValidate{
 		&ComplexType.AddressToValidate{
 			Address:           &ComplexType2.Address{
-				StreetLines:           []string{"14022 S MADISON AVE"},
-				City:                  "GLENPOOL",
-				StateOrProvinceCode:   "OK",
-				PostalCode:            "74033",
+				StreetLines:           []string{"1014 East Indian Creek Ranch Road"},
+				City:                  "Indian Creek",
+				StateOrProvinceCode:   "FL",
+				PostalCode:            "32435",
 				CountryCode:           "US",
 				Residential:           false,
 			},

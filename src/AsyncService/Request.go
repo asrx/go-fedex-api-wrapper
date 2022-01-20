@@ -2,7 +2,9 @@ package AsyncService
 
 import (
 	. "github.com/asrx/go-fedex-api-wrapper/src/AsyncService/ComplexType"
-	"github.com/hooklift/gowsdl/soap"
+	"github.com/asrx/go-fedex-api-wrapper/src/soap"
+
+	//"github.com/hooklift/gowsdl/soap"
 )
 
 type ASYNCPortType interface {

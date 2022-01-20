@@ -10,7 +10,9 @@ import (
 )
 
 func Test_TrackByNo(t *testing.T)  {
-	_trackingId1 := "396716838866"
+	//_trackingId1 := "785225643084"
+	_trackingId1 := "281473521854"
+
 
 	_TrackIdentifierType := SimpleType.TrackIdentifierTypeTRACKING_NUMBER_OR_DOORTAG
 	// detail1

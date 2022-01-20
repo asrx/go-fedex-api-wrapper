@@ -2,7 +2,8 @@ package AddressValidationService
 
 import (
 	. "github.com/asrx/go-fedex-api-wrapper/src/AddressValidationService/ComplexType"
-	"github.com/hooklift/gowsdl/soap"
+	"github.com/asrx/go-fedex-api-wrapper/src/soap"
+	//"github.com/hooklift/gowsdl/soap"
 )
 
 type AddressValidationPortType interface {

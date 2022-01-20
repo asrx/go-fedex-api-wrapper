@@ -2,7 +2,8 @@ package CountryService
 
 import (
 	. "github.com/asrx/go-fedex-api-wrapper/src/CountryService/ComplexType"
-	"github.com/hooklift/gowsdl/soap"
+	//"github.com/hooklift/gowsdl/soap"
+	"github.com/asrx/go-fedex-api-wrapper/src/soap"
 )
 
 type CountryPortType interface {

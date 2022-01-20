@@ -103,7 +103,7 @@ func Test_Cancel_Return_Ship(t *testing.T)  {
 		DispatchLocationId: 	"NQAA",
 		DispatchDate:           time.Now().Format("2006-01-02"),
 		Payment: 				ShippingChargesPayment,
-		ConfirmationNumber: 	"997091000111046",
+		ConfirmationNumber: 	"288936499680",
 	}
 
 	c := ShipService.NewShipPortType(_DEBUG)
