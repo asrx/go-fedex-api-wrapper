@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	calc "github.com/asrx/go-fedex-api-wrapper/src/Demo"
+	//"github.com/asrx/go-fedex-api-wrapper/src/soap"
 	"github.com/hooklift/gowsdl/soap"
 	"log"
 	"net/http"

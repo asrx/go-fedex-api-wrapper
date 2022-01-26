@@ -2,9 +2,8 @@ package ShipService
 
 import (
 	. "github.com/asrx/go-fedex-api-wrapper/src/ShipService/ComplexType"
-	"github.com/asrx/go-fedex-api-wrapper/src/soap"
-
-	//"github.com/hooklift/gowsdl/soap"
+	//"github.com/asrx/go-fedex-api-wrapper/src/soap"
+	"github.com/hooklift/gowsdl/soap"
 )
 
 type ShipPortType interface {

@@ -5,9 +5,17 @@ import (
 	SimpleType2 "github.com/asrx/go-fedex-api-wrapper/src/Common/SimpleType"
 )
 
+// Groud
 var ServiceType = SimpleType2.ServiceTypeFEDEX_GROUND
+// HomeDelivery
 var ServiceTypeHomeDelivery = SimpleType2.ServiceTypeGROUND_HOME_DELIVERY
+// SmartPost
 var ServiceTypeSmartPost = SimpleType2.ServiceTypeSMART_POST
+// Priority_overnight
+var ServiceTypePriority_overnight = SimpleType2.ServiceTypePRIORITY_OVERNIGHT
+// Standard_overnight
+var ServiceTypeStandard_overnight = SimpleType2.ServiceTypeSTANDARD_OVERNIGHT
+
 
 var PackageType = SimpleType2.PackagingTypeYOUR_PACKAGING
 
@@ -22,6 +30,35 @@ var ShipFromContact = &ComplexType2.Contact{
 	PhoneNumber: "6262258083",
 	EMailAddress: "OP1@LONGYUAN-LAX.COM",
 }
+
+var _pkgCount = 95
+var _GroupPackageCount uint = 1
+var PkgCount uint = uint(_pkgCount)
+
+var _weight float64 = 10
+
+var _length uint = 10
+var _width uint = 10
+var _height uint = 10
+
+// 签名
+//var _signatureOptionType = SimpleType2.SignatureOptionTypeDIRECT // 直接签名
+var _signatureOptionType = SimpleType2.SignatureOptionTypeNO_SIGNATURE_REQUIRED // 不需要签名
+
+var ShipToContact = &ComplexType2.Contact{
+	PersonName:          "VINCENT LU",
+	CompanyName:         "ANL",
+	PhoneNumber:         "8000000000",
+	EMailAddress:        "VINCENT@AN-LOGISTICS.COM",
+}
+//var ShipToAddr = &ComplexType2.Address{
+//	StreetLines:           []string{"12180 Hazelwood Dr"},
+//	City:                  "Nokesville",
+//	StateOrProvinceCode:   "VA",
+//	PostalCode:            "20181",
+//	CountryCode:           "US",
+//	Residential:           false,
+//}
 
 var ShipFromAddr = &ComplexType2.Address{
 	//StreetLines:           []string{"17539 HUGH LN"},
@@ -46,59 +83,30 @@ var ShipFromAddr = &ComplexType2.Address{
 	//GeographicCoordinates: "",
 }
 
-var _pkgCount = 1
-var _GroupPackageCount uint = 1
-var PkgCount uint = uint(_pkgCount)
-
-var _weight float64 = 56
-
-var _length uint = 15
-var _width uint = 18
-var _height uint = 33
-
-// 签名
-//var _signatureOptionType = SimpleType2.SignatureOptionTypeDIRECT // 直接签名
-var _signatureOptionType = SimpleType2.SignatureOptionTypeNO_SIGNATURE_REQUIRED // 不需要签名
-
-var ShipToContact = &ComplexType2.Contact{
-	PersonName:          "VINCENT LU",
-	CompanyName:         "ANL",
-	PhoneNumber:         "8000000000",
-	EMailAddress:        "VINCENT@AN-LOGISTICS.COM",
-}
-//var ShipToAddr = &ComplexType2.Address{
-//	StreetLines:           []string{"12180 Hazelwood Dr"},
-//	City:                  "Nokesville",
-//	StateOrProvinceCode:   "VA",
-//	PostalCode:            "20181",
-//	CountryCode:           "US",
-//	Residential:           false,
-//}
-
 // ONT8
-//var ShipToAddr = &ComplexType2.Address{
-//	StreetLines:           []string{"24300 Nandina Ave"},
-//	City:                  "Moreno Valley",
-//	StateOrProvinceCode:   "CA",
-//	PostalCode:            "92551",
-//	CountryCode:           "US",
-//	Residential:           false,
-//}
-
 var ShipToAddr = &ComplexType2.Address{
-	//StreetLines:           []string{"45 Fernwood Ave Suite D"},
-	//City:                  "Edison",
-	//StateOrProvinceCode:   "NJ",
-	//PostalCode:            "08837",
-	//CountryCode:           "US",
-	//Residential:           false,
-	StreetLines:           []string{"17539 HUGH LN"},
-	City:                  "LAND O LAKES",
-	StateOrProvinceCode:   "FL",
-	PostalCode:            "34638-7868",
+	StreetLines:           []string{"24300 Nandina Ave"},
+	City:                  "Moreno Valley",
+	StateOrProvinceCode:   "CA",
+	PostalCode:            "92551",
 	CountryCode:           "US",
-	Residential:           true,
+	Residential:           false,
 }
+
+//var ShipToAddr = &ComplexType2.Address{
+//	//StreetLines:           []string{"45 Fernwood Ave Suite D"},
+//	//City:                  "Edison",
+//	//StateOrProvinceCode:   "NJ",
+//	//PostalCode:            "08837",
+//	//CountryCode:           "US",
+//	//Residential:           false,
+//	StreetLines:           []string{"17539 HUGH LN"},
+//	City:                  "LAND O LAKES",
+//	StateOrProvinceCode:   "FL",
+//	PostalCode:            "34638-7868",
+//	CountryCode:           "US",
+//	Residential:           true,
+//}
 
 var Shipper = &ComplexType2.Party{
 	AccountNumber: GetAccount(),
@@ -138,7 +146,6 @@ var LabelSpecification = &ComplexType2.LabelSpecification{
 }
 
 func GetPackages() []*ComplexType2.RequestedPackageLineItem {
-	var _SequenceNumber uint
 	var _WeightUnits = SimpleType2.WeightUnitsLB
 
 	var _dimensionsUnits = SimpleType2.LinearUnitsIN
@@ -158,7 +165,7 @@ func GetPackages() []*ComplexType2.RequestedPackageLineItem {
 
 	var _packages = []*ComplexType2.RequestedPackageLineItem{}
 	for i := 1; i <= _pkgCount; i++ {
-		_SequenceNumber = uint(_pkgCount)
+		var _SequenceNumber = uint(i)
 		_packages = append(_packages, &ComplexType2.RequestedPackageLineItem{
 			SequenceNumber:               &_SequenceNumber,
 			GroupPackageCount:            &_GroupPackageCount,
@@ -185,7 +192,6 @@ func GetPackages() []*ComplexType2.RequestedPackageLineItem {
 }
 
 func GetPackagesForGroup() []*ComplexType2.RequestedPackageLineItem {
-	var _SequenceNumber uint
 	var _WeightUnits = SimpleType2.WeightUnitsLB
 
 	var _dimensionsUnits = SimpleType2.LinearUnitsIN
@@ -199,7 +205,7 @@ func GetPackagesForGroup() []*ComplexType2.RequestedPackageLineItem {
 	var _packages = []*ComplexType2.RequestedPackageLineItem{}
 
 
-	_SequenceNumber = uint(_pkgCount)
+	var _SequenceNumber = uint(_pkgCount)
 	_SequenceNumber = 1
 	var _groupCount uint = 399
 
@@ -260,6 +266,8 @@ func GetPackagesForGroup() []*ComplexType2.RequestedPackageLineItem {
 			},
 		},
 	})
+
+	PkgCount = _groupCount + _groupCount2
 
 	return _packages
 }

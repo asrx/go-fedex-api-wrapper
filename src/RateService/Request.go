@@ -2,9 +2,9 @@ package RateService
 
 import (
 	. "github.com/asrx/go-fedex-api-wrapper/src/RateService/ComplexType"
-	"github.com/asrx/go-fedex-api-wrapper/src/soap"
+	//"github.com/asrx/go-fedex-api-wrapper/src/soap"
 
-	//"github.com/hooklift/gowsdl/soap"
+	"github.com/hooklift/gowsdl/soap"
 )
 
 type RatePortType interface {
