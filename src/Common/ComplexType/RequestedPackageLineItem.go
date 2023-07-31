@@ -36,7 +36,7 @@ type RequestedPackageLineItem struct {
 	// Human-readable text describing the contents of the package to be used for clearance purposes.
 	ItemDescriptionForClearance string `xml:"ItemDescriptionForClearance,omitempty"`
 
-	CustomerReferences *CustomerReference `xml:"CustomerReferences,omitempty"`
+	CustomerReferences []*CustomerReference `xml:"CustomerReferences,omitempty"`
 
 	SpecialServicesRequested *PackageSpecialServicesRequested `xml:"SpecialServicesRequested,omitempty"`
 
